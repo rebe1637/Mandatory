@@ -2,7 +2,7 @@
 
 namespace Converter1._2
 {
-    public class Class1
+    public class Conv
     {
 
 
