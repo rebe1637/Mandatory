@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en-US">
+
+  <title>Grams to Ounces Converter</title>
+  <body>
+  
+  <h2>Weight Converter</h2>
+  <p>Type a value in the Grams field to convert the value to Ounces:</p>
+  
+  <p>
+    <label>Grams</label>
+    <input id="inputGrams" type="number" placeholder="Grams" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+  </p>
+  <p>Ounces: <span id="outputOunces"></span></p>
+  
+  <script>
+  function weightConverter(valNum) {
+    document.getElementById("outputOunces").innerHTML=valNum*0.035274;
+  }
+  </script>
+  </body>
+  </html>
+
+  <!doctype html>
+
+  <title>Ounces to Grams Converter</title>
+  <body>
+  
+  <h2>Weight Converter</h2>
+  <p>Type a value in the Ounces field to convert the value to Grams:</p>
+  
+  <p>
+    <label>Ounces</label>
+    <input id="inputOunces" type="number" placeholder="Ounces" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+  </p>
+  <p>Grams: <span id="outputGrams"></span></p>
+  
+  <script>
+  function weightConverter(valNum) {
+    document.getElementById("outputGrams").innerHTML=valNum/0.035274;
+  }
+  </script>
+
+  </body>
+  </html>
